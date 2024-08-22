@@ -2,8 +2,8 @@ import cv2
 import typing
 import numpy as np
 
-from mltu.inferenceModel import OnnxInferenceModel
-from mltu.utils.text_utils import ctc_decoder, get_cer
+from config.inferenceModel import OnnxInferenceModel
+from config.utils.text_utils import ctc_decoder, get_cer
 
 class ImageToWordModel(OnnxInferenceModel):
     def __init__(self, char_list: typing.Union[str, list], *args, **kwargs):
